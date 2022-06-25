@@ -26,3 +26,14 @@
   margin: 0px 0px 26px 0px;
   font-family: initial;
 }
+.form-input-todo{
+  outline: #000;
+  width: 100%;
+  padding: 5px 5px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: blue;
+  background-color: aquamarine;
+  border: 1px solid #000;
+  border-radius: 4px;
+}

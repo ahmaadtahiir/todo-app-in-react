@@ -37,7 +37,7 @@ const Form = ({ input, setInput, todo, setTodo, editTodo, setEditTodo }) => {
         <form onSubmit={onFormSubmit}>
             <input
                 type="text"
-                className="from-input-todo"
+                className="form-input-todo"
                 placeholder="Enter a todo..."
                 value={input}
                 onChange={onInputChange}
