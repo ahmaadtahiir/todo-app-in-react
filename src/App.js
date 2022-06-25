@@ -5,9 +5,11 @@ import TodoList from './components/TodoList';
 import './App.css';
 
 const App = () => {
+
+  const initialState = JSON.parse(localStorage.getItem("todo"))
   const [input, setInput] = useState("")
   const [todo, setTodo] = useState ([])
-  const [editTodo, setEditTodo] = (null)
+  const [editTodo, setEditTodo] = useState(null)
   return (
     <div className='app-container'>
       <div className='app-wrapper'>
