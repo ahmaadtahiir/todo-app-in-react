@@ -1,15 +1,21 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 import './App.css';
+// import { stringify } from 'uuid';
 
 const App = () => {
 
-  const initialState = JSON.parse(localStorage.getItem("todo"))
+  const initialState = JSON.parse(localStorage.getItem("todo")) || []
   const [input, setInput] = useState("")
-  const [todo, setTodo] = useState ([])
+  const [todo, setTodo] = useState (initialState)
   const [editTodo, setEditTodo] = useState(null)
+
+  useEffect(() => {
+    localStorage.setItem("todo", JSON.stringify(todo))
+  }, [todo])
+
   return (
     <div className='app-container'>
       <div className='app-wrapper'>
