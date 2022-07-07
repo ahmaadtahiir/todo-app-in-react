@@ -39,19 +39,19 @@ const TodoList = ({ todo, setTodo, setEditTodo }) => {
                         <button
                             className="button-completed"
                             onClick={() => handleComplete(todos)}>
-                                <img src={completeIcon}/>
+                                <img src={completeIcon} className="completeIcon"/>
                             <i className="fa fa-check-circle"></i>
                         </button>
                         <button
                             className="button-edit task-button"
                             onClick={() => handleEdit(todos)}>
-                            <img src={editIcon}/>
+                            <img src={editIcon} className="editIcon"/>
                             <i className="fa fa-edit"></i>
                         </button>
                         <button
                             className="button-delete task-button"
                             onClick={() => handleDetele(todos)}>
-                                <img src={deleteIcon}/>
+                                <img src={deleteIcon} className="deleteIcon"/>
                             <i className="fa fa-trash"></i>
                         </button>
                     </div>
