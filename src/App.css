@@ -60,7 +60,7 @@
   padding: 10px;
 }
 
-.completeIcon,
+/* .completeIcon,
 .deleteIcon,
 .editIcon{
   max-width: 20px;
@@ -68,9 +68,25 @@
   margin-right: 40px;
   display: flex;
   justify-content: end;
+} */
+.completeIcon{
+
+  max-width: 20px;
+  max-height: 20px;
+  margin: 0px 10px;
+}
+.deleteIcon{
+  max-width: 20px;
+  max-height: 20px;
+  margin: 0px 10px;
+}
+.editIcon{
+  max-width: 20px;
+  max-height: 20px;
+  margin: 0px 10px;
 }
 
-.button-completed,
+/* .button-completed,
 .button-edit,
 .button-delete {
   max-width: 10px;
@@ -79,7 +95,7 @@
   background-color: transparent;
   font-size: 25px;
   border-radius: 50%;
-}
+} */
 
 /* .button-completed {
   color: aqua;
@@ -110,15 +126,15 @@
 
 .list {
   width: 220px;
-  background-color: #12343b;
+  background-color: transparent;
   border: none;
-  color: #ccc;
+  color: rgb(0, 0, 0);
   font-size: 20px;
-  padding-left: 10px;
-  margin-right: 15px;
+  padding-left: 0px;
+  margin-right: 100px;
 }
 
-input :focus,
-button:focus {
+input:focus,
+button:focus{
   border: none;
 }

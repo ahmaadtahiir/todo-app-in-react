@@ -52,7 +52,7 @@ const TodoList = ({ todo, setTodo, setEditTodo }) => {
                             className="button-delete task-button"
                             onClick={() => handleDetele(todos)}>
                                 <img src={deleteIcon} className="deleteIcon"/>
-                            <i className="fa fa-trash"></i>
+                            {/* <i className="fa fa-trash"></i> */}
                         </button>
                     </div>
                 </li>
