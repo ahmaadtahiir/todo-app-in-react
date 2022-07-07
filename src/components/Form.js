@@ -44,7 +44,7 @@ const Form = ({ input, setInput, todo, setTodo, editTodo, setEditTodo }) => {
                 required
             />
             <button className="button-add" type="submit">
-                {editTodo ? "Ok" : "Add"}
+                {editTodo ? "OK" : "Add"}
             </button>
         </form>
     )

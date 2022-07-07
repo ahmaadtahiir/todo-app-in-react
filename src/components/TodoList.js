@@ -36,24 +36,18 @@ const TodoList = ({ todo, setTodo, setEditTodo }) => {
                         onChange={(event) => event.preventDefault()}
                     />
                     <div>
-                        <button
-                            className="button-completed"
-                            onClick={() => handleComplete(todos)}>
-                                <img src={completeIcon} className="completeIcon"/>
-                            <i className="fa fa-check-circle"></i>
-                        </button>
-                        <button
-                            className="button-edit task-button"
-                            onClick={() => handleEdit(todos)}>
-                            <img src={editIcon} className="editIcon"/>
-                            <i className="fa fa-edit"></i>
-                        </button>
-                        <button
-                            className="button-delete task-button"
-                            onClick={() => handleDetele(todos)}>
-                                <img src={deleteIcon} className="deleteIcon"/>
-                            {/* <i className="fa fa-trash"></i> */}
-                        </button>
+                        <img
+                            src={completeIcon} className="completeIcon"
+                            onClick={() => handleComplete(todos)}
+                        />
+                        <img
+                            src={editIcon} className="editIcon"
+                            onClick={() => handleEdit(todos)}
+                        />
+                        <img
+                            src={deleteIcon} className="deleteIcon"
+                            onClick={() => handleDetele(todos)}
+                        />
                     </div>
                 </li>
             ))}
