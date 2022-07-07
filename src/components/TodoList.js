@@ -1,6 +1,7 @@
 import React from "react";
-
-
+import completeIcon from "../assets/completeIcon.png";
+import deleteIcon from "../assets/deleteIcon.png";
+import editIcon from "../assets/editIcon.png";
 
 const TodoList = ({ todo, setTodo, setEditTodo }) => {
 
@@ -36,18 +37,21 @@ const TodoList = ({ todo, setTodo, setEditTodo }) => {
                     />
                     <div>
                         <button
-                            className="button-completed task-button"
-                            onClick={() => handleComplete(todos)}>Complete
+                            className="button-completed"
+                            onClick={() => handleComplete(todos)}>
+                                <img src={completeIcon}/>
                             <i className="fa fa-check-circle"></i>
                         </button>
                         <button
                             className="button-edit task-button"
-                            onClick={() => handleEdit(todos)}>Edit
+                            onClick={() => handleEdit(todos)}>
+                            <img src={editIcon}/>
                             <i className="fa fa-edit"></i>
                         </button>
                         <button
                             className="button-delete task-button"
-                            onClick={() => handleDetele(todos)}>Delete
+                            onClick={() => handleDetele(todos)}>
+                                <img src={deleteIcon}/>
                             <i className="fa fa-trash"></i>
                         </button>
                     </div>
